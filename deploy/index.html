@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theresa Mensah | Cybersecurity Portfolio</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (replace with your real Kit ID) -->
+  <script src="https://kit.fontawesome.com/yourKitID.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Theresa Mensah</h1>
+    <nav id="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+      <a href="projects.html"><i class="fas fa-laptop-code"></i> Projects</a>
+      <a href="associations.html"><i class="fas fa-users"></i> Associations</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="intro-text">
+        <h2>Hi, I’m <span class="highlight">Theresa Mensah</span> 👋</h2>
+        <p>
+          I'm a cybersecurity enthusiast, aspiring tech leader, and proud Drexel student. With roots in Ghana and a heart for innovation, I love creating secure, user-friendly solutions. 
+        </p>
+        <p>
+          From coding in Python to teaching young girls about technology, I’m passionate about tech, people, and purpose.
+        </p>
+        <a class="button" href="projects.html">Check Out My Work</a>
+      </div>
+      <div class="intro-image">
+        <img src="images/tmensah.JPG" alt="Photo of Theresa Mensah" />
+      </div>
+    </section>
+
+    <section class="philosophy">
+      <h2>Purpose & Professional Philosophy</h2>
+      <p><strong>Purpose Statement:</strong> As a cybersecurity student with a passion for technology, my goal is to use my skills to protect digital systems, contribute to financial tech innovation, and empower my community through education and outreach.</p>
+      <p><strong>Philosophy:</strong> I believe in lifelong learning, ethical leadership, and using tech as a force for good—especially in financial systems and underserved communities.</p>
+    </section>
+
+    <section class="highlights">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li><i class="fas fa-globe-africa"></i> Ghanaian-born & culture-driven</li>
+        <li><i class="fas fa-university"></i> Studying Cybersecurity @ Drexel University</li>
+        <li><i class="fas fa-briefcase"></i> Interned with Central Banks around the world</li>
+        <li><i class="fas fa-users-cog"></i> Leader in Drexel African Student Association</li>
+        <li><i class="fas fa-bolt"></i> Driven to combine tech with finance & community impact</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Theresa Mensah | Built with 💻 and love</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.hero', { delay: 200, distance: '60px', origin: 'bottom' });
+    ScrollReveal().reveal('.philosophy', { delay: 300, distance: '40px', origin: 'left' });
+    ScrollReveal().reveal('.highlights', { delay: 400, distance: '40px', origin: 'right' });
+  </script>
+</body>
+</html>
