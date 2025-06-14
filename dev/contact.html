@@ -1,7 +1,110 @@
-<h2>Contact Me</h2>
-<P>I’m really just a message away. Whether you want to talk tech, share an idea, ask something random, or connect over a project, don’t hesitate. I love meeting new people and hearing new perspectives, so hit me up!"" </P>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Theresa Mensah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #2c3e50;
+    }
 
-<p>Email: <a href="mailto:tm3424@drexel.edu">School Email</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/theresaamensah" target="_blank">Theresa Mensah</a></p>
-<p>Photography Page : <a href= "https://www.instagram.com/teriispace/" target="_blank"> Through Terii's Lens</a></p>
-<a href="index.html" class="back-home">← Back Home</a>
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+    }
+
+    .contact-item i {
+      font-size: 1.2rem;
+      color: #0077cc;
+    }
+
+    .contact-item a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .back-home {
+      display: block;
+      margin: 40px auto 10px;
+      text-align: center;
+      color: #0077cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>I’m really just a message away. Whether you want to talk tech, share an idea, ask something random, or connect over a project, don’t hesitate. I love meeting new people and hearing new perspectives, so hit me up!</p>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:tm3424@drexel.edu">tm3424@drexel.edu</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/theresaamensah" target="_blank">Theresa Mensah on LinkedIn</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-camera-retro"></i>
+        <a href="https://www.instagram.com/teriispace/" target="_blank">Through Terii's Lens</a>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-home">← Back Home</a>
+  </div>
+</body>
+</html>

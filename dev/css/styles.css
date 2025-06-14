@@ -144,4 +144,54 @@ body {
     margin-bottom: 10px;
     border-radius: 8px;
   }
-  
+  /* Base styles for small screens */
+body.home-page {
+  background-color: #ffe5ec; /* Light pink */
+}
+
+body.about-page {
+  background-color: #e0f7fa; /* Light teal */
+}
+
+body.resume-page {
+  background-color: #fef9e7; /* Light yellow */
+}
+
+body.projects-page {
+  background-color: #f3e5f5; /* Lavender */
+}
+
+body.associations-page {
+  background-color: #e8f5e9; /* Mint green */
+}
+
+body.contact-page {
+  background-color: #fff3e0; /* Peach */
+}
+
+/* Media query for screens 480px and up */
+@media screen and (min-width: 480px) {
+  body.home-page {
+    background-color: #ff99ac;
+  }
+
+  body.about-page {
+    background-color: #4dd0e1;
+  }
+
+  body.resume-page {
+    background-color: #fff176;
+  }
+
+  body.projects-page {
+    background-color: #ce93d8;
+  }
+
+  body.associations-page {
+    background-color: #81c784;
+  }
+
+  body.contact-page {
+    background-color: #ffb74d;
+  }
+}

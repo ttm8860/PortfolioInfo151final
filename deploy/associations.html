@@ -1,8 +1,125 @@
-<h2>Professional Associations</h2>
-<div>
-  <h3>WiCyS (Women in CyberSecurity)</h3>
-  <p>Connecting women in cybersecurity careers and learning.</p>
-  <a href="https://www.wicys.org" target="_blank"><img src="images/wicys.png" alt="WiCyS logo"></a>
-</div>
-<!-- Repeat for others like NSBE, IEEE, ALA -->
-<a href="index.html" class="back-home">← Back Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional & Community Associations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .org-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .org-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .org-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .org-card img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .org-card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #0077cc;
+    }
+
+    .org-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .org-card img {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <h1>My Professional and Community Associations</h1>
+      <p>
+        Being actively involved in organizations that align with my identity, interests, and career goals has helped me grow both personally and professionally. One community that has had a particularly meaningful impact on my journey is the Drexel African Student Association (DASA).
+      </p>
+      <p>
+        DASA connects students of African descent and anyone interested in African culture through cultural events, community service, and student support. As an event organizer for DASA, I help foster a sense of belonging on campus and celebrate the richness of African traditions and perspectives.
+      </p>
+
+      <div class="org-gallery">
+        <div class="org-card">
+          <a href="https://drexel.campuslabs.com/engage/organization/drexel-african-student-association" target="_blank">
+            <img src="img/dasalog.jpeg" alt="DASA Logo" class="org-logo" />
+            <h3>Drexel African Student Association</h3>
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-home">← Back Home</a>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scrollreveal-init.js"></script>
+</body>
+</html>

@@ -1,26 +1,152 @@
-<h2>About Me</h2>
-<p>I’m passionate about technology and community building. I love dancing, traveling, and sharing Ghanaian culture with others.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Theresa Mensah</title>
+  <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<img src="images/tmensah.JPG" alt="Theresa Mensah" />
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+      padding: 20px;
+    }
 
-<ul>
-  <li>My hobbies are photography, cooking, and traveling! I love to create and explore new things.</li>
-  <li>Tap to connect with me! <a href="https://www.linkedin.com/in/theresaamensah/" target="_blank">My LinkedIn</a></li>
-</ul>
-<section class="philosophy">
-  <h2>Purpose & Professional Philosophy</h2>
-  <p><strong>Purpose Statement:</strong> As a cybersecurity student with a passion for technology, my goal is to use my skills to protect digital systems, contribute to financial tech innovation, and empower my community through education and outreach.</p>
-  <p><strong>Philosophy:</strong> I believe in lifelong learning, ethical leadership, and using tech as a force for good—especially in financial systems and underserved communities.</p>
-</section>
+    .section-title {
+      font-size: 2rem;
+      color: #0077cc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-<section class="highlights">
-  <h2>Quick Facts</h2>
-  <ul>
-    <li><i class="fas fa-globe-africa"></i> Ghanaian-born & culture-driven</li>
-    <li><i class="fas fa-university"></i> Studying Cybersecurity @ Drexel University</li>
-    <li><i class="fas fa-briefcase"></i> Interned with a financial company that worked with Central Banks around the world</li>
-    <li><i class="fas fa-users-cog"></i> Leader in Drexel African Student Association</li>
-    <li><i class="fas fa-bolt"></i> Driven to combine tech with finance & community impact</li>
-  </ul>
-</section>
-</main>
+    #hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .intro-image {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .intro-image img {
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 200px;
+      height: auto;
+    }
+
+    #about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .green-list-item {
+      background-color: #e6f4ea;
+      border-left: 5px solid #4c75af;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0;
+      margin-top: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .facts-grid li {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+    }
+
+    .facts-grid i {
+      color: #0077cc;
+    }
+
+    .back-home {
+      display: block;
+      margin: 40px auto 0;
+      color: #205072;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="hero">
+    <h1 class="section-title">Get to know me 👋</h1>
+    <div class="intro-image">
+      <img src="img /tmensah.jpg" alt="Photo of Theresa Mensah" />
+    </div>
+    <div id="about">
+      <p class="about-p">
+        Hi! I'm Theresa, a Drexel student majoring in Cybersecurity. I'm passionate about helping underserved communities through technology, particularly in the finance space. I also lead student orgs, dance, and build digital projects that reflect my heritage and values. I love combining tech, culture, and leadership.
+      </p>
+      <ul>
+        <li class="green-list-item">
+          Community-Focused: I mentor young girls in tech and plan events through the Drexel African Student Association.
+        </li>
+        <li class="green-list-item">
+          Multi-Passionate: From cybersecurity labs to cultural events, I put my heart into everything I do.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="quick-facts" class="content-padding">
+    <h2 class="section-title">Quick Facts</h2>
+    <ul class="facts-grid">
+      <li><i class="fas fa-globe-africa"></i> Proudly Ghanaian 🇬🇭</li>
+      <li><i class="fas fa-university"></i> Drexel was my first choice</li>
+      <li><i class="fas fa-laptop-code"></i> Former data analyst turned security enthusiast</li>
+      <li><i class="fas fa-briefcase"></i> Interned with global financial institutions</li>
+      <li><i class="fas fa-users-cog"></i> DASA event planner & youth leader</li>
+      <li><i class="fas fa-heart"></i> I'm very passionate about culture, mentorship & tech equity</li>
+    </ul>
+  </section>
+
+  <a href="index.html" class="back-home">&larr; Back Home</a>
+</body>
+</html>
